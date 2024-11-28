@@ -2,25 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "Microsoft.AspNetCore.OpenApi/8.0.11": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.OpenApi": "1.4.3"
-        },
-        "compile": {
-          "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
         "type": "package",
         "build": {
@@ -111,21 +92,6 @@
     }
   },
   "libraries": {
-    "Microsoft.AspNetCore.OpenApi/8.0.11": {
-      "sha512": "1WCvCZpqvOAyul6upSJ8Rkb/QHdr4PLrDny26vFexya/nTkG3x2zt8j9qlJ5T3J+/yJD9KwlGKhho9ZDD/YiFA==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.openapi/8.0.11",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll",
-        "lib/net8.0/Microsoft.AspNetCore.OpenApi.xml",
-        "microsoft.aspnetcore.openapi.8.0.11.nupkg.sha512",
-        "microsoft.aspnetcore.openapi.nuspec"
-      ]
-    },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "sha512": "Ckb5EDBUNJdFWyajfXzUIMRkhf52fHZOQuuZg/oiu8y7zDCVwD0iHhew6MnThjHmevanpxL3f5ci2TtHQEN6bw==",
       "type": "package",
@@ -477,29 +443,36 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Microsoft.AspNetCore.OpenApi >= 8.0.11",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\safetech\\.nuget\\packages\\": {}
+    "C:\\Users\\safetech\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\safetech\\Documents\\ExternalProjects\\medical-scheduler\\MedicalSchedulerAPI\\MedicalSchedulerAPI.csproj",
-      "projectName": "MedicalSchedulerAPI",
-      "projectPath": "C:\\Users\\safetech\\Documents\\ExternalProjects\\medical-scheduler\\MedicalSchedulerAPI\\MedicalSchedulerAPI.csproj",
+      "projectUniqueName": "C:\\Users\\safetech\\Documents\\ExternalProjects\\medical-scheduler\\MedicalSchedulerApi\\MedicalSchedulerApi\\MedicalSchedulerApi.csproj",
+      "projectName": "MedicalSchedulerApi",
+      "projectPath": "C:\\Users\\safetech\\Documents\\ExternalProjects\\medical-scheduler\\MedicalSchedulerApi\\MedicalSchedulerApi\\MedicalSchedulerApi.csproj",
       "packagesPath": "C:\\Users\\safetech\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\safetech\\Documents\\ExternalProjects\\medical-scheduler\\MedicalSchedulerAPI\\obj\\",
+      "outputPath": "C:\\Users\\safetech\\Documents\\ExternalProjects\\medical-scheduler\\MedicalSchedulerApi\\MedicalSchedulerApi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\safetech\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\safetech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -516,17 +489,14 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      }
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-          "Microsoft.AspNetCore.OpenApi": {
-            "target": "Package",
-            "version": "[8.0.11, )"
-          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.6.2, )"
@@ -551,7 +521,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\safetech\\AppData\\Local\\Microsoft\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
